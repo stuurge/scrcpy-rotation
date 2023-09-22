@@ -246,7 +246,7 @@ sc_display_render(struct sc_display *display, const SDL_Rect *geometry,
 
     SDL_Renderer *renderer = display->renderer;
     SDL_Texture *texture = display->texture;
-
+    rotation = 270;
     if (rotation == 0) {
         int ret = SDL_RenderCopy(renderer, texture, NULL, geometry);
         if (ret) {
@@ -257,7 +257,7 @@ sc_display_render(struct sc_display *display, const SDL_Rect *geometry,
         // rotation in RenderCopyEx() is clockwise, while screen->rotation is
         // counterclockwise (to be consistent with --lock-video-orientation)
         int cw_rotation = (4 - rotation) % 4;
-        double angle = 90 * cw_rotation;
+        double angle = 190 * cw_rotation;
 
         const SDL_Rect *dstrect = NULL;
         SDL_Rect rect;
