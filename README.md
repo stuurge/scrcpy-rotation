@@ -4,6 +4,8 @@
 
 _pronounced "**scr**een **c**o**py**"_
 
+How to build: https://github.com/stuurge/scrcpy-rotation/blob/master/doc/build.md
+
 This application mirrors Android devices (video and audio) connected via
 USB or [over TCP/IP](doc/connection.md#tcpip-wireless), and allows to control the
 device with the keyboard and the mouse of the computer. It does not require any
